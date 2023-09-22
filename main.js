@@ -12,3 +12,13 @@ const classifier = ml5.soundClassifier(checkpointURL, options, modelReady);
 const btnIniciar = document.getElementById("btnIniciar");
 btnIniciar.style.display = "none";
 
+
+const lblResult = document.getElementById("lblResult");
+const result = document.getElementById("result");
+const lblAccuracy = document.getElementById("lblAccuracy");
+const accuracy = document.getElementById("accuracy");
+
+//VERIFICAR MODELO E SONS
+let isNoisesReady = false;
+let isModelReady = false;
+
